@@ -138,3 +138,11 @@ fun HalamanTataletak(modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 
 .verticalScroll(rememberScrollState())
+
+@Preview(showBackground = true)
+@Composable
+fun HalamanTataletakPreview() {
+    MaterialTheme {
+        HalamanTataletak()
+    }
+}
