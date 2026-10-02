@@ -138,23 +138,18 @@ fun HalamanTataletak(modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 
 
-
 @Composable
-fun TataletakRowColumn(modifier: Modifier = Modifier) {
-    Row(
-        modifier = modifier.fillMaxWidth(),
-        horizontalArrangement = Arrangement.SpaceEvenly
+fun HalamanTataletak(modifier: Modifier = Modifier) {
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .verticalScroll(rememberScrollState())
     ) {
-        Column {
-            Text(text = "Komponen1Kolom1")
-            Text(text = "Komponen2Kolom1")
-            Text(text = "Komponen3Kolom1")
-        }
-
-        Column {
-            Text(text = "Komponen1Kolom2")
-            Text(text = "Komponen2Kolom2")
-            Text(text = "Komponen3Kolom2")
-        }
+        Identitas()
+        TataletakColumn()
+        TataletakRow(Modifier.padding(vertical = 16.dp))
+        TataletakBox()
+        TataletakColumnRow(Modifier.padding(vertical = 16.dp))
+        TataletakRowColumn()
     }
 }
