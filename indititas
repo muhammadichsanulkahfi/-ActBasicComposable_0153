@@ -1,0 +1,7 @@
+@Composable
+fun Identitas(modifier: Modifier = Modifier) {
+    Column(modifier = modifier.padding(20.dp)) {
+        Text(text = "Muhammad Ikhsanul Kahfi", fontWeight = FontWeight.Bold)
+        Text(text = "NIM 20240140153")
+    }
+}
