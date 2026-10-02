@@ -137,19 +137,4 @@ fun HalamanTataletak(modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 
-
-@Composable
-fun HalamanTataletak(modifier: Modifier = Modifier) {
-    Column(
-        modifier = modifier
-            .fillMaxSize()
-            .verticalScroll(rememberScrollState())
-    ) {
-        Identitas()
-        TataletakColumn()
-        TataletakRow(Modifier.padding(vertical = 16.dp))
-        TataletakBox()
-        TataletakColumnRow(Modifier.padding(vertical = 16.dp))
-        TataletakRowColumn()
-    }
-}
+.verticalScroll(rememberScrollState())
