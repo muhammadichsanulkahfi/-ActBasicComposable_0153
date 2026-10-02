@@ -139,23 +139,25 @@ fun HalamanTataletak(modifier: Modifier = Modifier) {
 @Composable
 fun HalamanTataletakPreview() {
     MaterialTheme { HalamanTataletak() }
-}
-@Composable
-fun TataletakBox(modifier: Modifier = Modifier) {
-    Box(
-        modifier = modifier
-            .fillMaxWidth()
-            .padding(vertical = 20.dp),
-        contentAlignment = Alignment.Center
-    ) {
-        Text(text = "Box 1")
-        Column {
-            Text(text = "Column 1")
-            Text(text = "Column 2")
+}@Composable
+fun TataletakColumnRow(modifier: Modifier = Modifier) {
+    Column(modifier = modifier) {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly
+        ) {
+            Text(text = "Komponen1Baris1")
+            Text(text = "Komponen2Baris1")
+            Text(text = "Komponen3Baris1")
         }
-        Row {
-            Text(text = "Row 1")
+
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly
+        ) {
+            Text(text = "Komponen1Baris2")
+            Text(text = "Komponen2Baris2")
+            Text(text = "Komponen3Baris2")
         }
-        Text(text = "Box 2")
     }
 }
