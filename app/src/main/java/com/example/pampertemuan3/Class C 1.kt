@@ -146,3 +146,11 @@ fun HalamanTataletakPreview() {
         HalamanTataletak()
     }
 }
+
+TataletakRow(
+Modifier.padding(vertical = 16.dp)
+)
+
+TataletakRow(
+modifier = Modifier.padding(vertical = 16.dp)
+)
